@@ -1,1 +1,1 @@
-echo "Hello from .zprofile"
+# echo "Hello from .zprofile"

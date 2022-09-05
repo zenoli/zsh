@@ -1,1 +1,1 @@
-echo "Hello from .zlogin"
+# echo "Hello from .zlogin"
