@@ -2,5 +2,5 @@
 # == KEYBINDINGS
 # ============================================
 
-bindkey -s '^o' 'fzf_cd^M'
-bindkey -s '^[o' 'fzf_edit^M'
+bindkey -s '^o' '$EDITOR $(fzf_fd f)^M'
+bindkey -s '^[o' 'cd $(fzf_fd d)^M'
