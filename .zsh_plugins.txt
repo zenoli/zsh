@@ -1,19 +1,14 @@
 romkatv/powerlevel10k kind:fpath
 lukechilds/zsh-nvm
-
-# zsh-users/zsh-autosuggestions
 zdharma-continuum/fast-syntax-highlighting kind:defer
-
 zsh-users/zsh-completions
 
-# now, configure and run compinit to initialize completions
-# belak/zsh-utils path:completion
-
-# marlonrichert/zsh-autocomplete
-
+# Oh-my-zsh plugins
 ohmyzsh/ohmyzsh path:lib/completion.zsh
 ohmyzsh/ohmyzsh path:lib/history.zsh
 ohmyzsh/ohmyzsh path:lib/directories.zsh
 ohmyzsh/ohmyzsh path:lib/theme-and-appearance.zsh
 ohmyzsh/ohmyzsh path:plugins/colored-man-pages
 ohmyzsh/ohmyzsh path:plugins/vi-mode
+ohmyzsh/ohmyzsh path:plugins/git
+unixorn/fzf-zsh-plugin branch:main
