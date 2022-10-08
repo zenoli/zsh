@@ -2,3 +2,5 @@ antidote
 .zsh_plugins.zsh
 .p10k.zsh
 .zcompcache
+.zcompdump
+.theme
