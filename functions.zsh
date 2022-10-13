@@ -8,6 +8,21 @@ function print_colors {
 	done
 }
 
+# lfcd
+function f {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        if [ -d "$dir" ]; then
+            if [ "$dir" != "$(pwd)" ]; then
+                cd "$dir"
+            fi
+        fi
+    fi
+}
+
 function man {
     LESS_TERMCAP_md=$'\e[01;31m' \
     LESS_TERMCAP_me=$'\e[0m' \
@@ -35,3 +50,4 @@ function nvimconfig { edit_config $XDG_CONFIG_HOME/nvim init.lua }
 function awesomeconfig { edit_config $XDG_CONFIG_HOME/awesome rc.lua }
 function kittyconfig { edit_config $XDG_CONFIG_HOME/kitty kitty.conf }
 function vimconfig { edit_config $HOME .vimrc }
+
