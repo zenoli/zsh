@@ -1,1 +1,1 @@
-# echo "Hello from .zprofile"
+export PATH=$PATH:/usr/local/go/bin
