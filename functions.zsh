@@ -11,7 +11,7 @@ function print_colors {
 # lfcd
 function f {
     tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
+    lfrun -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
         dir="$(cat "$tmp")"
         rm -f "$tmp"
@@ -50,4 +50,5 @@ function nvimconfig { edit_config $XDG_CONFIG_HOME/nvim init.lua }
 function awesomeconfig { edit_config $XDG_CONFIG_HOME/awesome rc.lua }
 function kittyconfig { edit_config $XDG_CONFIG_HOME/kitty kitty.conf }
 function vimconfig { edit_config $HOME .vimrc }
+function lfconfig { edit_config $XDG_CONFIG_HOME/lf lfrc }
 
