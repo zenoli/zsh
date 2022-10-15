@@ -4,6 +4,7 @@
 
 alias ra="ranger"
 alias ranger="source ranger"
+alias gw="./gradlew"
 alias algolab="~/algolab.sh"
 alias tester="~/tester.sh"
 alias vcai="~/Documents/algolab/vscode_algolab/vscode_algolab_init.sh"
