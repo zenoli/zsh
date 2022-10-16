@@ -41,7 +41,7 @@ function m {
 
 function edit_config {
     tmux rename-window " $(basename $1)"
-    v $1/$2 +"cd $1"
+    nvim $1/$2 +"cd $1"
 }
 
 function zshconfig { edit_config $ZDOTDIR .zshrc }
