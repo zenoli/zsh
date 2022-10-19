@@ -2,6 +2,7 @@
 # == ALIASES
 # ============================================
 
+alias v="nvim"
 alias ra="ranger"
 alias ranger="source ranger"
 alias gw="./gradlew"
