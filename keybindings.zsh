@@ -2,5 +2,5 @@
 # == KEYBINDINGS
 # ============================================
 
-bindkey -s '^o' 'cd $($ZDOTDIR/scripts/fzf_fd d)^M'
-bindkey -s '^[o' '$EDITOR $($ZDOTDIR/scripts/fzf_fd f)^M'
+bindkey -s '^o' 'cd $(zeno-fzf-fd d)^M'
+bindkey -s '^[o' '$EDITOR $(zeno-fzf-fd f)^M'
