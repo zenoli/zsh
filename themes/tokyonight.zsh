@@ -1,5 +1,5 @@
 # MY_PROMPT=~/.config/zsh/prompts/p10k_classic_singlerow.zsh
-MY_PROMPT="$XDG_CONFIG_HOME/zsh/prompts/p10k_classic_multirow.zsh"
+MY_PROMPT="$XDG_CONFIG_HOME/zsh/prompts/p10k_rainbow_slanted.zsh"
 [[ ! -f $MY_PROMPT ]] || source $MY_PROMPT
 POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
 
