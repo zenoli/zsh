@@ -16,6 +16,8 @@ alias countdown="~/go/bin/countdown"
 alias picom_restart="pkill picom && sleep 0.2 && picom &!"
 alias android-studio="/opt/android-studio/bin/studio.sh 2> /dev/null &!"
 alias gradle="/opt/gradle/gradle-7.2/bin/gradle"
+alias feh="feh --info 'echo %f; echo %w x %h'"
+alias git="noglob git"
 
 # Git
 alias gc=fzf-git-checkout
