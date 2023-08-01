@@ -9,3 +9,4 @@ source $ZDOTDIR/keybindings.zsh
 source $ZDOTDIR/theme.zsh
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/functions.zsh
+

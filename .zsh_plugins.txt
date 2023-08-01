@@ -5,7 +5,6 @@ Aloxaf/fzf-tab
 # zsh-users/zsh-completions
 
 # Oh-my-zsh plugins
-ohmyzsh/ohmyzsh path:lib/completion.zsh
 ohmyzsh/ohmyzsh path:lib/history.zsh
 ohmyzsh/ohmyzsh path:lib/directories.zsh
 ohmyzsh/ohmyzsh path:lib/theme-and-appearance.zsh

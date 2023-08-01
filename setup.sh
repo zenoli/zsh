@@ -11,5 +11,5 @@ if [[ ! -d $ZDOTDIR/antidote ]];then
     git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/antidote
 echo "antidote cloned to ${ZDOTDIR:-~}/antidote"
 else
-    echo "antigen already installed in ${ZDOTDIR:-~}"
+    echo "antidote already installed in ${ZDOTDIR:-~}"
 fi

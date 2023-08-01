@@ -39,6 +39,10 @@ function m {
     [[ $# -eq 2 ]] && LESS=+"/^\s*$2" man $1
 }
 
+function ng_cmp {
+    $(command -v ng > /dev/null) && source <(ng completion script)
+}
+
 function edit_config {
     tmux rename-window " $(basename $1)"
     nvim $1/$2 +"cd $1"
