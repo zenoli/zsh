@@ -24,6 +24,10 @@ function ghd {
     && $(command -v gh > /dev/null) \
     && gh completion -s zsh > ~/.local/share/zsh/completion/_gh
 
+[[ ! -f $completion_dir/_glab ]] \
+    && $(command -v glab > /dev/null) \
+    && glab completion -s zsh > ~/.local/share/zsh/completion/_glab
+
 fpath=(~/.local/share/zsh/completion $fpath)
 autoload -U compinit
 compinit -i
