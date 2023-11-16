@@ -10,4 +10,3 @@ source $ZDOTDIR/theme.zsh
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/functions.zsh
 source $ZDOTDIR/sdk_man.zsh
-source $ZDOTDIR/gh_cli.zsh
