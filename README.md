@@ -1,7 +1,9 @@
 # zsh
+
 My zsh config
 
 ## Setup
+
 1. Clone this repo to `~/.config/zsh`
 2. `cd` to `~/.config/zsh` and run `chmod +x ./setup.sh`
 3. Run `./setup.sh`

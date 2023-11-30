@@ -25,5 +25,5 @@ function ghd {
     && gh completion -s zsh > ~/.local/share/zsh/completion/_gh
 
 fpath=(~/.local/share/zsh/completion $fpath)
-autoload -U compinit
+autoload -Uz compinit
 compinit -i
