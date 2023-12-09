@@ -6,4 +6,5 @@ source "$ZDOTDIR/src/fzf.zsh"
 source "$ZDOTDIR/src/vi-mode.zsh"
 source "$ZDOTDIR/src/theme.zsh"
 source "$ZDOTDIR/src/history.zsh"
+source "$ZDOTDIR/src/aliases.zsh"
 
