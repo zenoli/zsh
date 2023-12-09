@@ -9,6 +9,10 @@ function() {
         && [[ ! -f $completion_dir/_gh ]] \
         && gh completion -s zsh > $completion_dir/_gh
 
+    cmd_exists poetry \
+        && [[ ! -f $completion_dir/_poetry ]] \
+        && poetry completions zsh > $completion_dir/_poetry
+
     local zsh_cache_dir="$XDG_CACHE_HOME/zsh"
     if [[ ! -d $zsh_cache_dir ]]; then
         echo "Creating $zsh_cache_dir"
