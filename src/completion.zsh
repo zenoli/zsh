@@ -18,20 +18,20 @@ function() {
         echo "Creating $zsh_cache_dir"
         mkdir -p $zsh_cache_dir
     fi
-    local zshcompdump="$zsh_cache_dir/zcompdump"
+    local zcompdump_file="$zsh_cache_dir/zcompdump"
 
     autoload -Uz compinit
 
     # cache .zcompdump for about a day
-    if [[ $zshcompdump(#qNmh-20) ]]; then
-        compinit -C -d "$zshcompdump"
+    if [[ $zcompdump_file(#qNmh-20) ]]; then
+        compinit -C -d "$zcompdump_file"
     else
-        compinit -i -d "$zshcompdump"; touch "$zshcompdump"
+        compinit -i -d "$zcompdump_file"; touch "$zcompdump_file"
     fi
     {
         # compile .zcompdump
-        if [[ -s "$zshcompdump" && (! -s "${zshcompdump}.zwc" || "$zshcompdump" -nt "${zshcompdump}.zwc") ]]; then
-            zcompile "$zshcompdump"
+        if [[ -s "$zcompdump_file" && (! -s "${zcompdump_file}.zwc" || "$zcompdump_file" -nt "${zcompdump_file}.zwc") ]]; then
+            zcompile "$zcompdump_file"
         fi
     } &!
 }
