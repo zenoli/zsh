@@ -1,2 +1,0 @@
-# vi: ft=sh
-LC_CTYPE=C command man "$@"
