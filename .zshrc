@@ -1,18 +1,16 @@
-source "$ZDOTDIR/src/instant-prompt.zsh"
-source "$ZDOTDIR/src/utils.zsh"
-source "$ZDOTDIR/src/completion.zsh"
-source "$ZDOTDIR/src/antidote.zsh"
-source "$ZDOTDIR/src/fzf.zsh"
-source "$ZDOTDIR/src/vi-mode.zsh"
-source "$ZDOTDIR/src/theme.zsh"
-source "$ZDOTDIR/src/history.zsh"
-source "$ZDOTDIR/src/aliases.zsh"
+function load {
+    source "$ZDOTDIR/$1"
+}
 
-# source "$ZDOTDIR/src/programs/gh.zsh"
+load "src/instant-prompt.zsh"
+load "src/utils.zsh"
+load "src/completion.zsh"
+load "src/antidote.zsh"
+load "src/fzf.zsh"
+load "src/vi-mode.zsh"
+load "src/theme.zsh"
+load "src/history.zsh"
+load "src/aliases.zsh"
+load "src/functions.zsh"
 
-fpath+="$ZDOTDIR/src/functions"
-for fn in "$ZDOTDIR/src/functions"/*; do
-    autoload -U "$(basename "$fn")"
-done
-
-
+unfunction load

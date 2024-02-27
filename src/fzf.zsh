@@ -1,9 +1,10 @@
 function () {
     local fzf_home="$XDG_DATA_HOME/zsh/fzf"
+    local fzf_repo='https://github.com/junegunn/fzf.git'
     if [[ ! -d $fzf_home ]] ; then
         echo "Installing fzf..."
         rm -rf $fzf_home
-        git clone --depth 1 https://github.com/junegunn/fzf.git "$fzf_home"
+        git clone --depth 1 "$fzf_repo" "$fzf_home"
         "$fzf_home/install" --bin
     fi
 
