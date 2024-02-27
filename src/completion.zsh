@@ -5,10 +5,12 @@ function() {
     [[ -d "$completion_dir" ]] || mkdir -p "$completion_dir"
     fpath+="$completion_dir"
 
+    # GitHub Cli Completions
     cmd_exists gh \
         && [[ ! -f $completion_dir/_gh ]] \
         && gh completion -s zsh > $completion_dir/_gh
 
+    # Poetry Completions
     cmd_exists poetry \
         && [[ ! -f $completion_dir/_poetry ]] \
         && poetry completions zsh > $completion_dir/_poetry

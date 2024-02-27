@@ -8,3 +8,11 @@ source "$ZDOTDIR/src/theme.zsh"
 source "$ZDOTDIR/src/history.zsh"
 source "$ZDOTDIR/src/aliases.zsh"
 
+# source "$ZDOTDIR/src/programs/gh.zsh"
+
+fpath+="$ZDOTDIR/src/functions"
+for fn in "$ZDOTDIR/src/functions"/*; do
+    autoload -U "$(basename "$fn")"
+done
+
+
