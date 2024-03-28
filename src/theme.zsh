@@ -1,2 +1,6 @@
-autoload -Uz promptinit && promptinit && prompt powerlevel10k
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+function () {
+    local theme_file="$ZDOTDIR/src/themes/default.zsh" 
+    autoload -Uz promptinit && promptinit && prompt powerlevel10k
+    [[ ! -f "$theme_file" ]] || source "$theme_file"
+}
+
