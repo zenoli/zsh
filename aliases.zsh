@@ -29,3 +29,8 @@ alias setjdk8="export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64"
 alias setjdk11="export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64"
 alias setjdk13="export JAVA_HOME=/usr/lib/jvm/jdk-13.0.2"
 alias setjdk17="export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64"
+
+alias smart-document-viewer="$HOME/repos/ti8m/smart-document-viewer-project/start-session.sh"
+alias pa='source $(poetry env info --path)/bin/activate'
+
+alias eda='~/repos/ti8m/eda-rag/start-session.sh'
