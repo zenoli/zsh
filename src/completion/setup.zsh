@@ -1,20 +1,4 @@
 function() {
-
-    local completion_dir="$XDG_DATA_HOME/zsh/completion"
-
-    [[ -d "$completion_dir" ]] || mkdir -p "$completion_dir"
-    fpath+="$completion_dir"
-
-    # GitHub Cli Completions
-    cmd_exists gh \
-        && [[ ! -f $completion_dir/_gh ]] \
-        && gh completion -s zsh > $completion_dir/_gh
-
-    # Poetry Completions
-    cmd_exists poetry \
-        && [[ ! -f $completion_dir/_poetry ]] \
-        && poetry completions zsh > $completion_dir/_poetry
-
     local zsh_cache_dir="$XDG_CACHE_HOME/zsh"
     if [[ ! -d $zsh_cache_dir ]]; then
         echo "Creating $zsh_cache_dir"
