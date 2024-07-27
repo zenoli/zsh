@@ -12,6 +12,7 @@ load "src/theme.zsh"
 load "src/history.zsh"
 load "src/aliases.zsh"
 load "src/functions.zsh"
+load "src/mise.zsh"
 load "src/completion/load-sources.zsh"
 
 unfunction load
