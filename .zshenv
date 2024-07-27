@@ -11,8 +11,6 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export TERM="tmux-256color"
 
-export NVM_DIR="$XDG_DATA_HOME/nvm"
-
 # Needed for plugin `unixorn/fzf-zsh-plugin`, otherwise it tries to install
 # fzf by itself in $HOME which while want to avoid.
 export FZF_PATH="$XDG_DATA_HOME/zsh/fzf"

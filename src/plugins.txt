@@ -1,5 +1,4 @@
 romkatv/powerlevel10k kind:fpath
-lukechilds/zsh-nvm
 zdharma-continuum/fast-syntax-highlighting
 Aloxaf/fzf-tab
 unixorn/fzf-zsh-plugin branch:main

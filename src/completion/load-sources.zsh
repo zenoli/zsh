@@ -8,6 +8,10 @@ function () {
     for completion_src in $sources_dir/*; do
         cmd_name=$(basename "$completion_src")
         cmd_name="${cmd_name%.*}"
+        # For debugging only:
+        # if cmd_exists $cmd_name; then
+        #     echo "$cmd_name exists"
+        # fi
         cmd_exists $cmd_name \
             && [[ ! -f "$completion_dir/_$cmd_name" ]] \
             && source $completion_src > "$completion_dir/_$cmd_name"

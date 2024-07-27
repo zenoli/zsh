@@ -10,6 +10,10 @@ function edit_config {
     nvim $1/$2 +"cd $1"
 }
 
+function cmd_exists {
+    command -v "$1" &> /dev/null
+}
+
 function zshconfig { edit_config $ZDOTDIR .zshrc }
 function tmuxconfig { edit_config $XDG_CONFIG_HOME/tmux tmux.conf }
 function nvimconfig { edit_config $XDG_CONFIG_HOME/nvim init.lua }
