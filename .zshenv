@@ -1,6 +1,8 @@
 # The system wide config /etc/zsh/zshrc calls compinit by default.
 # This is the default on Ubuntu. They provide a way to disable this
 # using the following flag:
+
+# shellcheck disable=2034
 skip_global_compinit=1
 source "$ZDOTDIR/src/xdg.zsh"
 
