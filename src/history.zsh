@@ -8,4 +8,6 @@ function() {
     setopt hist_ignore_all_dups
     setopt hist_ignore_dups
     setopt hist_save_no_dups
+    setopt no_share_history # is set by oh-my-zsh history plugin --> explizitly disable it
+    setopt inc_append_history
 }
