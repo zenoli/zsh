@@ -24,3 +24,7 @@ gh completion -s zsh
 Hence, you need to create a file `src/completion/sources/gh.zsh` and insert the command there.
 
 The completions will be automatically setup when you source `.zshrc`.
+
+## Local configs
+
+If a directory contains a file `.local.zsh`, it will be automatically sourced.
