@@ -13,5 +13,8 @@ load "src/vi-mode.zsh"
 load "src/theme.zsh"
 load "src/history.zsh"
 load "src/aliases.zsh"
+load "src/local-config.zsh"
 
 unfunction load
+
+
